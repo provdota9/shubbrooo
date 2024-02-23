@@ -1631,15 +1631,6 @@ local function PlayMacroFunc ()
 
 					local cappedUpgrade = false
 
-					if AboutAction['type'] == 'Upgrade' then
-
-
-						for equippedslot, unitAbout in pairs(EquippedUnitsAbout) do							
-							if #unitAbout.upgrades <= unitInWorkspace.Upgrade.Value then cappedUpgrade = true break end
-						end
-
-					end
-
 					if cappedUpgrade then continue end
 
 					distance = newDistance
